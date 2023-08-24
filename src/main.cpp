@@ -88,10 +88,10 @@ int main(int argc, char **argv)
 
         std::ofstream output_file("Link.h", std::ios::trunc);
 
-		if (!output_file.write(output.c_str(), output.size()))
-            throw std::runtime_error("Unable to write file: 'Link.h'. Permissions?");
+	if (!output_file.write(output.c_str(), output.size()))
+		throw std::runtime_error("Unable to write file: 'Link.h'. Permissions?");
 
-		output_file.close();
+	output_file.close();
 
         printf("[+] %i read in total\n", file_count);
         printf("[+] Successfully linked resources into 'Link.h'\n");
